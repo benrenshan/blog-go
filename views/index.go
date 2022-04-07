@@ -20,12 +20,13 @@ func (*HTMLApi) Index(w http.ResponseWriter,r *http.Request)  {
 			Name: "go",
 		},
 	}
+	
 	var posts = []models.PostMore{
 		{
 			Pid: 1,
 			Title: "go博客",
 			Content: "内容",
-			UserName: "码神",
+			UserName: "Ripple",
 			ViewCount: 123,
 			CreateAt: "2022-02-20",
 			CategoryId:1,
@@ -33,6 +34,7 @@ func (*HTMLApi) Index(w http.ResponseWriter,r *http.Request)  {
 			Type:0,
 		},
 	}
+
 	var hr = &models.HomeResponse{
 		config.Cfg.Viewer,
 		categorys,
