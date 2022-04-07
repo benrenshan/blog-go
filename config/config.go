@@ -15,7 +15,7 @@ type Viewer struct {
 	Description  string
 	Logo  string
 	Navigation  []string
-	Bilibili string
+	Yuque string
 	Avatar string
 	UserName string
 	UserDesc string
@@ -41,7 +41,7 @@ func init()  {
 	if err != nil {
 		panic(err)
 	}
-	Cfg.System.AppName = "mszlu-go-blog"
+	Cfg.System.AppName = "go-blog"
 	Cfg.System.Version = 1.0
 	_,err = toml.DecodeFile("config/config.toml",&Cfg)
 	if err != nil {

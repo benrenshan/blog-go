@@ -20,7 +20,7 @@ func (*HTMLApi) Index(w http.ResponseWriter,r *http.Request)  {
 			Name: "go",
 		},
 	}
-	
+
 	var posts = []models.PostMore{
 		{
 			Pid: 1,
@@ -28,7 +28,7 @@ func (*HTMLApi) Index(w http.ResponseWriter,r *http.Request)  {
 			Content: "内容",
 			UserName: "Ripple",
 			ViewCount: 123,
-			CreateAt: "2022-02-20",
+			CreateAt: "2022-04-07",
 			CategoryId:1,
 			CategoryName: "go",
 			Type:0,
