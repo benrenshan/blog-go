@@ -10,6 +10,7 @@ var Template models.HtmlTemplate
 
 func LoadTemplate()  {
 	w := sync.WaitGroup{}
+	// WaitGroup 协程
 	w.Add(1)
 	go func() {
 		//耗时
